@@ -1,0 +1,74 @@
+*{
+    margin: 12px;
+    padding: 0px;
+}
+
+#titulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(146, 14, 113);
+    font-size: 30px;
+    text-align: center;  
+}
+
+#subtitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(121, 7, 92);
+    font-size: 14px;
+    text-align: center;  
+}
+
+.tabela{
+    text-align: center;
+}
+
+#grupo {
+    border: solid;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(146, 14, 113);
+    margin-top: 3%;
+    text-align:left;
+    
+}
+
+input, select, textarea, button {
+    border: solid rgba(186, 189, 183, 0.568);
+    border-width: 1px;
+
+}
+
+.campo {
+    margin-bottom: 3mm;
+}
+
+.campo input[type="text"], .campo input[type="text"], .campo select, .campo textarea, .campo input[type="number"] {
+    padding: 0.2em;
+}
+
+.campo select option {
+    padding-right: 1em;
+}
+
+
+#envio{
+
+    background: rgb(146, 14, 113);;
+    
+    color: white;
+    
+    border-style: none;
+    
+    border-color: rgba(186, 189, 183, 0.568);
+    
+    height: 50px;
+    
+    width: 100px;
+    
+    font: bold 15px arial, sans-serif;
+    
+    text-shadow:none;
+    
+    }

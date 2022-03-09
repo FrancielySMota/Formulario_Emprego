@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <script type="text/javascript" src="Javascript1.js"></script>
+    <title>Formulário</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Formulário de candidatura de emprego</h1>
+        <p id="subtitulo">Obrigado pelo seu interesse em trabalhar conosco. Por favor, confira abaixo as oportunidades de trabalho disponíveis, que atendem aos seus critérios e envie sua candidatura preenchendo o Formulário de Candidatura de Emprego.</p>
+        <br>
+    </div>
+    <form action="processamento.html" method="post">
+        <table id="tabela" border="1">
+        <div id="nome">
+            <tr>
+                <td width="40%"><label for="name"><strong>Nome*:</strong></label>
+                <input type="text" name="Nome" id="Nome" size="30" placeholder="Digite seu nome" required></td>
+            </tr>
+        </div>
+
+        <div class="campo">
+        <tr>
+            <td><label for="email"><strong>Sobrenome*:</strong></label>
+            <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome" size="35" required></td>
+        </tr>
+        </div>
+    <div>
+        <tr>
+        <td><label for="email"><strong>E-mail:</strong></label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" size="45" required></td>
+    </tr>
+    </div>
+    <div class="campo">
+    <tr>
+        <td><label for="fone"><strong>Telefone *:</strong></label>
+        <input type="number" id="fone" placeholder="(xx) xxxxx-xxxx" name="fone" required size=""></td>
+    </tr>
+    </div>
+    <div class="campo">
+        <tr>
+       <td><label><strong>Para qual vaga você esta se candidatando *:</strong></label>
+        <select id="horario">
+            <option selected disabled value="">Selecione:</option>
+            <option>Analista de Contabilidade</option>
+            <option>Analista de Suporte Técnico II</option>
+            <option>Desenvolvedor Web Júnior</option>
+        </select>
+    </td>
+    </tr>
+    </div>
+        <div class="campo">
+            <tr>
+            <td><label><strong>Qual a sua situação atual de emprego?</strong></label>
+            <label>
+                <input type="radio" name="setor" value="Empregado"> Empregado
+            </label>
+            <label>
+                <input type="radio" name="setor" value="Autônomo">Autônomo
+            </label>
+            <label>
+                <input type="radio" name="setor" value="Desempregado">Desempregado
+            </label>
+            <label>
+                <input type="radio" name="setor" value="Estudante">Estudante
+            </label>
+        </td>
+            </tr>
+        </div>
+            <div>
+                <tr>
+                <td><label for="name"><strong>Link do seu perfil Linkedin:</strong></label>
+                <input type="link" name="linkedin" id="linkedin" size="50" required>
+                </td>
+                </tr>
+            </div>
+            <div>
+                <tr>
+                <td><label for="name"><strong>Anexe seu currículo *:</strong></label>
+                <input type="file" name="arquivos" required>
+                </td>
+                </tr>
+            </div>
+            <div id="checkss">
+            <tr>
+                <td><label><strong>Em casos pontuais, você possui disponibilidade para trabalhar aos finais de semana?</strong></label><br>
+                <input type="radio" id="resposta1" name="equipamento" value="sim">
+                <label for="resposta1">Sim</label>
+                <input type="radio" id="resposta2" name="equipamento" value="nao">
+                <label for="resposta2">Não</label></td>
+            </tr>
+            
+            </div>
+        </fieldset>
+        <tr>
+        <td><div class="campo">
+            <label><strong>Observações:</strong></label><br>
+            <textarea placeholder="Observações"></textarea>
+        </div>
+        <input type="button">
+        <button id="envio">Enviar</button>
+        </td>
+    </tr>
+    </table>
+    </form>
+    <p></p>
+</body>
+</html>
